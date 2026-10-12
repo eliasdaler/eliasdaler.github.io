@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Yume Nikki PS</title>
+    <link rel="icon" href="https://eliasdaler.github.io/assets/icon.png" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Yume Nikki PS" />
+    <meta property="og:title" content="Yume Nikki PS - Online Demo" />
+    <meta property="og:description" content="Yume Nikki PS" />
+    <meta property="og:image" content="https://eliasdaler.github.io/assets/icon.png" />
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:title" content="Yume Nikki PS - Online Demo" />
+    <meta name="twitter:description" content="Yume Nikki PS" />
+    <meta name="twitter:image" content="https://eliasdaler.github.io/assets/icon.png" />
+    <meta name="twitter:player" content="https://eliasdaler.github.io/online-demo/embed.html" />
+    <meta name="twitter:player:width" content="960" />
+    <meta name="twitter:player:height" content="720" />
+    <meta name="theme-color" content="#5f8bc3" />
+</head>
+
+<body style="margin: 0;>
+
+    <div id="canvas-container">
+        <canvas id="canvas" oncontextmenu="event.preventDefault()"
+            style="width: 100%; height: 100%; cursor: none"
+            width="640"
+            height="480"
+        ></canvas>
+    </div>
+
+    <script type='text/javascript'>
+        var Module = {
+            canvas: (function() { return document.getElementById('canvas'); })()
+        };
+    </script>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
+
